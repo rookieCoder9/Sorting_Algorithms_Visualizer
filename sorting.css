@@ -1,0 +1,70 @@
+html body {
+  background-color: #15202b;
+  color: black;
+  font-size: 15px;
+}
+.title {
+  color: lightgray;
+  font-size: 35;
+  font-style: normal;
+}
+
+.bars {
+  width: 20px;
+  color: white;
+  padding: 2px;
+  background-color: rgba(172, 255, 47, 0.822);
+  margin-left: 2.2px;
+
+  float: left;
+}
+.mybars {
+  margin-top: 50px;
+  margin-left: 10px;
+  padding-inline-start: auto;
+}
+.red {
+  background-color: rgb(250, 193, 8) !important;
+  margin-top: 100px;
+  color: white;
+  transition: margin-top 0.2s ease-in-out;
+  width: 20px !important;
+  margin-left: 2.2px !important;
+
+  float: left !important;
+
+  padding: 1px solid white !important;
+}
+.mergebars {
+  padding-left: 5px;
+  width: 8px;
+  background-color: white;
+  margin-left: 2.2px;
+
+  float: left;
+}
+
+.pivot {
+  background-color: black !important;
+  margin-top: 100px;
+  color: white;
+  transition: margin-top 0.2s ease-in-out;
+  width: 20px !important;
+  margin-left: 2.2px !important;
+
+  float: left !important;
+}
+.left {
+  background-color: rgb(54, 187, 240) !important;
+  margin-top: 100px;
+  color: white;
+  transition: margin-top 0.2s ease-in-out;
+  width: 20px !important;
+  margin-left: 2.2px !important;
+
+  float: left !important;
+}
+
+.sz {
+  color: yellowgreen;
+}

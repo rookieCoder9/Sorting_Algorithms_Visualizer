@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Sorting Algoritms Visualizer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="sorting.css" />
+    <script src="js/sorting.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/insertion.js"></script>
+    <script src="js/merge.js"></script>
+    <script src="js/quick.js"></script>
+    <script src="js/selection.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <script src="js/sorting.js"></script>
+    <h1 class="title">Sorting Algoritms Visualizer</h1>
+    <nav class="navbar-expand-lg">
+      <div class="container-fluid">
+        <form
+          action="https://github.com/sahildhiman-nsutian"
+          method="get"
+          target="_blank"
+        >
+          <button class="btn btn-primary navbar-btn" type="submit">
+            View on Github
+          </button>
+        </form>
+
+        <button
+          id="new_button"
+          class="btn btn-warning navbar-btn"
+          onclick="createbars()"
+        >
+          New Array
+        </button>
+        <button
+          id="isort_button"
+          class="btn btn-primary navbar-btn"
+          onclick="is()"
+        >
+          Insertion Sort
+        </button>
+        <button
+          id="qsort_button"
+          class="btn btn-primary navbar-btn"
+          onclick="qs()"
+        >
+          Quick Sort
+        </button>
+        <button
+          id="bsort_button"
+          class="btn btn-primary navbar-btn"
+          onclick="bs()"
+        >
+          Bubble Sort
+        </button>
+        <button
+          id="msort_button"
+          class="btn btn-primary navbar-btn"
+          onclick="sort()"
+        >
+          Merge Sort
+        </button>
+        <button
+          id="ssort_button"
+          onclick="ss()"
+          class="btn btn-primary navbar-btn"
+        >
+          Selection Sort
+        </button>
+        <button
+          id="clear_button"
+          class="btn btn-danger navbar-btn"
+          onclick="clrscreen()"
+        >
+          Clear Array
+        </button>
+
+        <input type="text" id="sz" placeholder="Enter Size (50 default)" />
+
+        <input
+          type="text"
+          id="speed"
+          placeholder="Enter Delay (100ms default)"
+        />
+      </div>
+    </nav>
+    <div id="bar_body" class="mybars"></div>
+    <p style="color: aliceblue; margin-top: 400px; font-size: medium;">
+      Made with <span style="color: #e25555;">&#9829;</span> by Sahil
+    </p>
+  </body>
+</html>
