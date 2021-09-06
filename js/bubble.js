@@ -15,6 +15,9 @@ async function bs() {
         alert("Create an Array First");
         return;
     }
+     if (document.getElementById("speed").value != "") {
+        delay = document.getElementById("speed").value;
+    }
     document.getElementById("bsort_button").disabled = true;
     document.getElementById("clear_button").disabled = true;
     document.getElementById("ssort_button").disabled = true;
