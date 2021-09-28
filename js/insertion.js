@@ -36,13 +36,13 @@ async function is() {
         await sleep(delay);
         while ((j > -1) && (current < (getValue(j)))) {
             document.getElementById("bars" + (i)).className = "red"
-            document.getElementById("bars" + (j + 1)).className = "red"
+            document.getElementById("bars" + (j)).className = "red"
             await sleep(delay);
             document.getElementById("bars" + (j + 1)).style.height = getValue(j) + "px";
-            document.getElementById("bars" + (j)).innerText = getValue(j);
+            document.getElementById("bars" + (j + 1)).innerText = getValue(j);
             await sleep(delay);
             document.getElementById("bars" + (i)).className = "bars"
-            document.getElementById("bars" + (j + 1)).className = "bars"
+            document.getElementById("bars" + (j)).className = "bars"
             j--;
 
         }
@@ -63,7 +63,7 @@ async function is() {
     document.getElementById("qsort_button").disabled = false;
     document.getElementById("sz").disabled = false;
     document.getElementById("speed").disabled = false;
-    await sleep(10);
+    await sleep(100);
     window.alert("Sort Completed !")
     // createbars()
 }
